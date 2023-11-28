@@ -1,0 +1,24 @@
+{
+  "name": "supabase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "reset": "npx supabase db reset",
+    "local:dump": "npx supabase db dump --db-url postgresql://postgres:postgres@127.0.0.1:34322/postgres -f supabase/backup/local_seed.sql --data-only",
+    "dbml": "npx dbdocs build basic.dbml --project knex-supabase",
+    "db:start": "npx supabase start -x vector,edge-runtime,realtime",
+    "sql": "dbml2sql basic.dbml --postgres -o migrations/20230626060237_local.sql",
+    "types": "npx supabase gen types typescript --local --schema public > ../src/types/supabase.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "@dbml/cli": "^3.0.0",
+    "dbdocs": "^0.8.4",
+    "supabase": "^1.113.3"
+  }
+}
