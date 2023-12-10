@@ -10,7 +10,6 @@ export default function Login({
 }) {
   const signIn = async (formData: FormData) => {
     "use server";
-
     const email = formData.get("email") as string;
     const password = formData.get("password") as string;
     const cookieStore = cookies();
@@ -30,6 +29,7 @@ export default function Login({
 
   const signUp = async (formData: FormData) => {
     "use server";
+
     const origin = headers().get("origin");
     const email = formData.get("email") as string;
     const password = formData.get("password") as string;
