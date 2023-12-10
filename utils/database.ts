@@ -18,7 +18,7 @@ type QueryInTransaction<T> = (
   >
 ) => Promise<T>;
 
-export const userRLSQuery = async <T>(
+export const rlsQuery = async <T>(
   userId: string,
   txFunc: QueryInTransaction<T>
 ) =>
