@@ -28,8 +28,5 @@ export const rlsQuery = async <T>(
         userId
       )}', TRUE)`
     );
-    await tx.execute(
-      sql`SELECT set_config('request.jwt.claim', '${sql.raw(userId)}', TRUE)`
-    );
     return await txFunc(tx);
   });
