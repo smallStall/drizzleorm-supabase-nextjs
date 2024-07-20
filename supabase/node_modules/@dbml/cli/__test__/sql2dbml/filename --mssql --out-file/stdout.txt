@@ -1,1 +1,0 @@
-  ✔ Generated DBML file from SQL file (SQL Server): schema.dbml

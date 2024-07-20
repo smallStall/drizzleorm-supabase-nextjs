@@ -1,6 +1,0 @@
-{
-  "args": [
-    "./in-files/schema.sql",
-    "--mysql"
-  ]
-}

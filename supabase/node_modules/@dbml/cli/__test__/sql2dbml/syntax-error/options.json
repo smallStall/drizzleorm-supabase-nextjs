@@ -1,6 +1,0 @@
-{
-  "args": [
-    "--mysql",
-    "./in-files/business.sql"
-  ]
-}

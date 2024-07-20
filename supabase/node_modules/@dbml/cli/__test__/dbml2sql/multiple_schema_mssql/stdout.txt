@@ -1,1 +1,0 @@
-  ✔ Generated SQL dump file (SQL Server): multiple_schema.out.sql

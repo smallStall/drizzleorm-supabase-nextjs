@@ -1,6 +1,0 @@
-{
-  "args": [
-    "--mssql",
-    "./in-files/schema.sql"
-  ]
-}
