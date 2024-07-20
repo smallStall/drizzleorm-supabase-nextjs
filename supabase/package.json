@@ -14,11 +14,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "pg": "^8.11.3"
+    "pg": "^8.12.0"
   },
   "devDependencies": {
-    "@dbml/cli": "^3.0.0",
-    "dbdocs": "^0.8.4",
-    "supabase": "^1.113.3"
+    "@dbml/cli": "^3.6.0",
+    "dbdocs": "^0.10.0",
+    "supabase": "^1.183.5"
   }
 }

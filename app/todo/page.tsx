@@ -1,11 +1,9 @@
-import { createClient } from "@/utils/supabase/server";
-import { cookies } from "next/headers";
+import { createClient } from "../utils/supabase/client";
 import { todos } from "@/schema/todos";
-import { rlsQuery } from "@/utils/database";
+import { rlsQuery } from "../utils/database";
 
 export default async function Todo() {
-  const cookieStore = cookies();
-  const supabase = createClient(cookieStore);
+  const supabase = createClient();
   const user = await supabase.auth.getUser();
   if (user.data.user == null) return Response.json({ error: "Not logged in" });
 
