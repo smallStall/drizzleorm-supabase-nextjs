@@ -17,8 +17,8 @@
     "pg": "^8.12.0"
   },
   "devDependencies": {
-    "@dbml/cli": "^3.6.0",
-    "dbdocs": "^0.10.0",
-    "supabase": "^1.183.5"
+    "@dbml/cli": "^3.9.0",
+    "dbdocs": "^0.12.2",
+    "supabase": "^1.192.5"
   }
 }

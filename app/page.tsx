@@ -20,7 +20,7 @@ export default function Login({
     });
 
     if (error) {
-      return redirect("/login?message=Could not authenticate user");
+      return redirect("/?message=Could not authenticate user");
     }
 
     return redirect("/todo");
@@ -43,10 +43,10 @@ export default function Login({
     });
 
     if (error) {
-      return redirect("/login?message=Could not authenticate user");
+      return redirect("/?message=Could not authenticate user");
     }
 
-    return redirect("/login?message=Check email to continue sign in process");
+    return redirect("/?message=Check email to continue sign in process");
   };
 
   return (
